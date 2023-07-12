@@ -15,8 +15,9 @@ const AllList = () => {
         setText('')
     }
 
-    const deleteItem = () => {
-
+    const deleteItem = (index: number) => {
+        const updatedList = list.filter((item) => list.indexOf(item) !== index)
+        setList(updatedList)
     }
 
     return (
@@ -24,7 +25,7 @@ const AllList = () => {
             <Text style={[styles.align, styles.font]}>{title}</Text>
             <ScrollView>
                 {list.map((x, index) =>
-                    <ToDo key={index} item={x} index={index} />
+                    <ToDo key={index} item={x} index={index} delete={deleteItem} />
                 )}
             </ScrollView>
             <View>
