@@ -15,7 +15,9 @@ const AllList = () => {
         setText('')
     }
 
+    //const deleteItem = (index: string) => {
     const deleteItem = (index: number) => {
+        //const updatedList = list.filter((item) => item !== index)
         const updatedList = list.filter((item) => list.indexOf(item) !== index)
         setList(updatedList)
     }
