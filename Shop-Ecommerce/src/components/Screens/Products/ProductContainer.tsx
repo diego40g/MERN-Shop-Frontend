@@ -15,13 +15,14 @@ const ProductContainer = () => {
     return (
         <View>
             <Text>Product Cotainer</Text>
-            <View style={{ marginTop: 100 }}>
-                <FlatList
+            <View style={{ marginTop: 100, }}>
+                {/* <FlatList
                     horizontal
                     data={products}
                     renderItem={({ item }) => <ProductList key={item.id} item={item} />}
                     keyExtractor={item => item.name}
-                />
+                />*/}
+                <ProductList data={data} />
             </View>
         </View>
     )
