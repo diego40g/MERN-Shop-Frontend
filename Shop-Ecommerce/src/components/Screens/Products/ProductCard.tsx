@@ -17,7 +17,7 @@ const ProductCard = (props: any) => {
             <Image
                 style={styles.image}
                 resizeMode='contain'
-                source={{ uri: image ? image : 'https://cdn.pixabay.com/photo/2012/04/01/17/29/box' }}
+                source={{ uri: image ? image : 'https://cdn.pixabay.com/photo/2012/04/01/17/29/box-23649_960_720.png' }}
             />
             <View style={styles.card} />
             <Text style={styles.title}>
@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     container: {
         width: width / 2 - 20,
         height: width / 1.7,
+        flex: 1,
         padding: 10,
         borderRadius: 10,
         marginTop: 55,
@@ -63,7 +64,7 @@ const styles = StyleSheet.create({
         width: width / 2 - 20 - 10
     },
     title: {
-        fontWeight: 'bold',
+        fontWeight: "bold",
         fontSize: 14,
         textAlign: 'center'
     },
