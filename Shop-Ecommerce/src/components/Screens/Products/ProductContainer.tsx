@@ -15,17 +15,22 @@ const ProductContainer = () => {
     return (
         <View>
             <Text>Product Cotainer</Text>
-            <View style={{ marginTop: 100, }}>
-                {/* <FlatList
-                    horizontal
+            <View style={styles.container}>
+                <FlatList
+                    numColumns={2}
                     data={products}
                     renderItem={({ item }) => <ProductList key={item.id} item={item} />}
                     keyExtractor={item => item.name}
-                />*/}
-                <ProductList data={data} />
+                />
             </View>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        marginTop: 100,
+    }
+})
 
 export default ProductContainer;
