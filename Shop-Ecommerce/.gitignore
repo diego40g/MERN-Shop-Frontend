@@ -20,3 +20,5 @@ assets/
 *.jpg
 *png
 *.jpeg
+
+src/components/materialAuxiliar
