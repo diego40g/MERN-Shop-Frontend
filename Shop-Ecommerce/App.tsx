@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Header from './src/components/Shared/Header';
-import ProductContainer from './src/components/Screens/Products/ProductContainer';
+import ProductContainer from './src/components/Pages/Products/ProductContainer';
 
 export default function App() {
   return (
