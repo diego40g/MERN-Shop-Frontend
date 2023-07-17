@@ -16,5 +16,4 @@ const ProductList = (props: any) => {
     )
 }
 
-
 export default ProductList;
