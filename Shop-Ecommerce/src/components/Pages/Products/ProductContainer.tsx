@@ -62,26 +62,28 @@ const ProductContainer = () => {
                     />
                 </Heading>
                 {focus == true ? (
-                    <Center h="80%">
-                        <Box
-                            _dark={{
-                                bg: 'coolGray.800'
-                            }}
-                            _light={{
-                                bg: 'white'
-                            }}
-                            flex="1"
-                            safeAreaTop
-                            maxW="100%"
-                            w="100%"
-                        >
-                            <ScrollView showsVerticalScrollIndicator={false}>
-                                <ProductSearch
-                                    productsFiltered={productsFiltered}
-                                />
-                            </ScrollView>
-                        </Box>
-                    </Center>
+                    <View style={styles.container}>
+                        <Center h="80%">
+                            <Box
+                                _dark={{
+                                    bg: 'coolGray.800'
+                                }}
+                                _light={{
+                                    bg: 'white'
+                                }}
+                                flex="1"
+                                safeAreaTop
+                                w="100%"
+                            >
+                                <ScrollView showsVerticalScrollIndicator={false}>
+                                    <ProductSearch
+                                        //navigation={props.navigation}
+                                        productsFiltered={productsFiltered}
+                                    />
+                                </ScrollView>
+                            </Box>
+                        </Center>
+                    </View>
                 ) : (
                     <View style={styles.container}>
                         <Text>Product Cotainer</Text>
