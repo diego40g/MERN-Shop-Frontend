@@ -60,6 +60,9 @@ const ProductContainer = () => {
                             />
                         }
                     />
+                    {focus == true ? (
+                        <Icon onPress={onBlur} name="ios-close" />
+                    ) : null}
                 </Heading>
                 {focus == true ? (
                     <View style={styles.container}>
