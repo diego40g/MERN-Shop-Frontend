@@ -59,10 +59,15 @@ const ProductContainer = () => {
                                     <Ionicons name="ios-search" />}
                             />
                         }
+                        InputRightElement={
+                            focus == true ? <Icon
+                                ml="2"
+                                size="4"
+                                color="gray.400"
+                                as={<Ionicons onPress={onBlur} name="ios-close" />}
+                            /> : null
+                        }
                     />
-                    {focus == true ? (
-                        <Icon onPress={onBlur} name="ios-close" />
-                    ) : null}
                 </Heading>
                 {focus == true ? (
                     <View style={styles.container}>
