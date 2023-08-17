@@ -23,9 +23,9 @@ const ProductContainer = () => {
         }
     }, [])
 
-    const searchProduct = (text: string) => {
+    const searchProduct = (text: string): void => {
         setProductsFiltered(
-            products.filter((i: string) => i.name.toLowerCase().includes(text.toLowerCase()))
+            products.filter((i) => i.name.toLowerCase().includes(text.toLowerCase()))
         )
     }
     const openList = () => {
@@ -46,7 +46,7 @@ const ProductContainer = () => {
                     <Input
                         placeholder="Search"
                         onFocus={openList}
-                        onChange={(text) => searchProduct(text)}
+                        onChangeText={(text) => searchProduct(text)}
                         variant="filled"
                         width="100%"
                         borderRadius="10"
